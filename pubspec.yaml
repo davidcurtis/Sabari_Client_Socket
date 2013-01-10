@@ -1,0 +1,5 @@
+name:  SabariChat
+description:  Live Chat application Client-Server
+
+dependencies:
+  web_components: any

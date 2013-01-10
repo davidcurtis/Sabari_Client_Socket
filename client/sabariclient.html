@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sabari Live Chat</title>
+    <link rel="stylesheet" href="sabariclient.css">
+  </head>
+  <body>
+   <center> <h1>Sabari Chat </h1>
+    
+    <p>Bienvenue</p></center>
+    
+    <div id="container">
+      <p id="text"></p>
+    </div>
+
+    <script type="application/dart" src="web/sabariclient.dart"></script>
+    <script src="http://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+    
+       <div class="loginbox" id="loginbox">
+        <form id="formlogin" action="" class="formlogin">
+          <h4>Administration: connectez vous</h4>
+          <input type="text" placeholder="Nom d'utilisateur" class="username" id = "Nom_Utilisateur"/>
+          <input type="password" placeholder="Mot de passe" class="password" id = "Mot_DePasse"/>
+          <ul>
+            
+            <li> <a href="#" class="newmember">Nouveau Membre ?</a> </li>
+          </ul>
+        </form>
+        
+        <form id="forminscription" action="" >
+            <h4>Inscription: remplissez le formulaire</h4>
+            <input type="text" id="Nom_Utilisateur2" placeholder="Nom d'utilisateur" class="username"/>
+            <input type="password" id="Mot_DePasse2" placeholder="Mot de passe" class="password"/>
+            <ul>
+              <li> <a href="" class="connection" id="connection_action">Se Connecter ?</a> </li>
+            </ul>
+            
+        </form>
+ 
+      </div>
+               
+                              
+                <!-- boite affichage de la conversation -->           
+                <div id="conversation" class="conversation">
+                        <h1>Messages</h1>
+                </div>               
+                  <!-- boite affichage des contacts -->           
+                 <div id="list_contact" class="list_contact">
+                     <input type="text" placeholder="Destinataire 1,Destinataire 2 ..." class="destinataire" id = "destinataire"/>
+                 </div>
+      
+                  <div id="concact">
+                    <ul id="laListe"></ul>
+                  </div>
+                  
+                  
+                  <!-- boite d'ecriture d'un message --> 
+                 <div id="message" class="message">
+                     <form id="chat_message" action="web/sabariclient.dart" >
+                         <input type="text" id="leTexte" placeholder="Ecrivez votre message" class="leTexte"/>
+                     </form>   
+                 </div>            
+  
+
+  </body>
+</html>
