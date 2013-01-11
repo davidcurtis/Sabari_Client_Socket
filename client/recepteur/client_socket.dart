@@ -9,8 +9,11 @@ class ClientSocket {
   OutputStream outputStream;
   WebSocketConnection socketInterface;
   String messageAEnvoyer;
+  
   //----------------------------------- Ecrivez l'addresse Ip de votre serveur juste en bas ! ------------------------------
   Socket conn = new Socket("", 8080);
+  //------------------------------------------------------------------------------------------------------------------------
+  
   String messageRecueDuServeur='';
   int incrementationMessage =0 ;
   

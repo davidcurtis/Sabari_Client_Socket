@@ -61,7 +61,7 @@ class ClientInterface
       //Recevoir un message destiné a tout le monde
       else if(listeRecue.contains('msgAll'))
       {
-        vue.ajouterMessage("${listeRecue.last.toString()}:".concat(listeRecue[1].toString()));
+        vue.ajouterMessage("${listeRecue[2].toString()}:".concat(listeRecue[1].toString()));
       }
       
       
