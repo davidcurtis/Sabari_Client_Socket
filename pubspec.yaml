@@ -1,5 +1,6 @@
 name:  SabariChat
 description:  Live Chat application Client-Server
+author: David Curtis david.curtis@hotmail.ca
 
 dependencies:
   web_components: any
